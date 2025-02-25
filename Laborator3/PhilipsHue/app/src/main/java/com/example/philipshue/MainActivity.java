@@ -14,6 +14,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.app.NotificationCompat;
@@ -57,6 +58,11 @@ public class MainActivity extends AppCompatActivity {
             if (!isAutoMode) {
                 isLightOn = !isLightOn;
                 updateManualMode();
+                if (isLightOn) {
+                    Toast.makeText(this, "Buna dimineata!", Toast.LENGTH_SHORT).show();
+                } else {
+                    Toast.makeText(this, "Noapte buna!", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         autoModeSwitch.setOnCheckedChangeListener((buttonView, isChecked) -> {
@@ -71,6 +77,15 @@ public class MainActivity extends AppCompatActivity {
                 statusText.setText("Custom Mode: " + colorNames[customColorIndex]);
                 toggleButton.setText("Turn Off");
                 statusText.setTextColor(customColorIndex == 0 ? Color.BLACK : Color.WHITE);
+                if (customColorIndex == 0) {
+                    Toast.makeText(this, "Mod: Relaxare", Toast.LENGTH_SHORT).show();
+                } else if (customColorIndex == 1) {
+                    Toast.makeText(this, "Mod: Concentrare", Toast.LENGTH_SHORT).show();
+                } else if (customColorIndex == 2) {
+                    Toast.makeText(this, "Mod: Urgenta", Toast.LENGTH_SHORT).show();
+                } else if (customColorIndex == 3) {
+                    Toast.makeText(this, "Mod: Speranta", Toast.LENGTH_SHORT).show();
+                }
             }
         });
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
