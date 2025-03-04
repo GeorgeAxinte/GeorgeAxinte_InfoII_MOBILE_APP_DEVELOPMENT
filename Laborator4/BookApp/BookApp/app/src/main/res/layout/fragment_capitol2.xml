@@ -1,0 +1,59 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrev"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:textColor="#FFFF"
+                style="@style/CustomButton"
+                android:layout_marginEnd="16dp"/>
+
+            <Button
+                android:id="@+id/btnNext"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:textColor="#FFFF"
+                android:layout_height="wrap_content"
+                android:text="Next" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 2: Innovations and Breakthroughs"
+            android:textSize="18sp"
+            android:textColor="#FFFF"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFF"
+            android:text="Audi has always been synonymous with cutting-edge technology. One of its most groundbreaking innovations was the introduction of the quattro all-wheel-drive system in 1980. Originally developed for rally racing, quattro technology revolutionized grip, handling, and performance, giving Audi a competitive edge in motorsports. The Audi Sport Quattro dominated the World Rally Championship (WRC), proving that all-wheel drive wasn't just for off-road vehicles—it was a game-changer for high-performance cars as well.\n\nBeyond quattro, Audi pioneered lightweight construction with the Audi Space Frame (ASF), an aluminum chassis that reduced weight while increasing strength. This technology debuted in the 1994 Audi A8, the first full-production car to use an all-aluminum body.\n\nIn modern times, Audi continues to lead the industry with innovations such as:\n\nVirtual Cockpit – A fully digital driver display that replaces analog gauges with a customizable screen.\nMatrix LED and Laser Headlights – Advanced lighting technology that adapts to road conditions and improves visibility.\nMild-Hybrid and Electric Powertrains – With the e-tron series, Audi has embraced sustainability while maintaining high-performance standards.\n\nAudi’s commitment to innovation is not just about speed and efficiency; it’s about redefining the driving experience with advanced technology." />
+
+        <ImageView
+            android:id="@+id/imgChapter1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Chapter 2 Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ch2" />
+
+    </LinearLayout>
+</ScrollView>

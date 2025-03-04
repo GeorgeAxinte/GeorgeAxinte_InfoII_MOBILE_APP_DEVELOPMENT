@@ -1,0 +1,93 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/background">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="The Audi Legacy: A Four-Chapter Journey"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="#FFFF"
+        android:layout_gravity="center"
+        android:paddingBottom="20dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingBottom="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:spacing="8dp">
+
+            <Button
+                android:id="@+id/btnToChapter1"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter 1"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnToChapter2"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter 2"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:spacing="8dp">
+
+            <Button
+                android:id="@+id/btnToChapter3"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter 3"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:layout_margin="8dp"/>
+
+            <Button
+                android:id="@+id/btnToChapter4"
+                style="@style/CustomButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chapter 4"
+                android:textColor="#ffffff"
+                android:padding="12dp"
+                android:layout_margin="8dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp">
+
+    </FrameLayout>
+
+</LinearLayout>

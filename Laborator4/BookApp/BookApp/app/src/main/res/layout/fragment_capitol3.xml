@@ -1,0 +1,50 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFF"
+            style="@style/CustomButton"
+            android:layout_marginEnd="16dp"/>
+
+        <Button
+            android:id="@+id/btnNext"
+            style="@style/CustomButton"
+            android:layout_width="wrap_content"
+            android:textColor="#FFFF"
+            android:layout_height="wrap_content"
+            android:text="Next" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter 3: The Evolution of Audi’s Design and Performance"
+        android:textSize="18sp"
+        android:textColor="#FFFF"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="619dp"
+        android:textColor="#FFFF"
+        android:layout_marginTop="16dp"
+        android:text="Throughout its history, Audi has designed some of the most beloved and recognizable vehicles, including:
+
+Audi TT (1998) – A compact sports car with a futuristic design, inspired by Bauhaus minimalism.
+Audi R8 (2006) – A mid-engine supercar that combines exotic styling with everyday usability.
+Audi RS models – High-performance versions of regular Audi models, featuring turbocharged engines and track-ready suspension.
+Performance has always been at the core of Audi's identity. The Audi RS lineup, developed by Audi Sport GmbH, offers some of the most powerful and refined sports sedans, coupes, and SUVs. Vehicles like the RS6 Avant, RS7 Sportback, and RS e-tron GT showcase Audi’s ability to blend luxury, practicality, and extreme performance.
+
+Under the hood, Audi has perfected turbocharged engines and plug-in hybrid powertrains, ensuring that its vehicles deliver both power and efficiency. Whether it's the roaring 5.2L V10 of the R8 or the instant torque of the e-tron GT’s electric motors, Audi continues to push the boundaries of automotive engineering." />
+</LinearLayout>

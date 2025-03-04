@@ -1,0 +1,45 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnPrev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textColor="#FFFF"
+            style="@style/CustomButton"
+            android:layout_marginEnd="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFF"
+            android:text="Chapter 4: The Future of Audi"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFF"
+            android:text="As the world shifts toward sustainable mobility, Audi has made significant strides in electric vehicle (EV) technology. The e-tron series represents Audi’s commitment to a greener future, featuring fully electric SUVs, sedans, and sports cars. The RS e-tron GT, for example, is a high-performance EV that rivals Tesla and Porsche, delivering breathtaking acceleration with zero emissions.\n\nBeyond electrification, Audi is investing heavily in autonomous driving and AI-powered technologies. The Audi AI:ME concept car envisions a future where vehicles are fully autonomous, allowing passengers to relax while the car handles the driving. Audi's research in Level 4 autonomous technology suggests that self-driving Audi models could be on the road within the next decade.\n\nKey features shaping Audi’s future include:\n\nVehicle-to-Everything (V2X) Communication – Enabling cars to communicate with smart infrastructure for optimized traffic flow.\nAdvanced AI Driver Assistance – Systems that can predict and react to road conditions with minimal human intervention.\nCarbon-Neutral Manufacturing – Audi aims to achieve net-zero carbon emissions by 2050, ensuring a sustainable future for the brand.\nWith a focus on innovation, luxury, and sustainability, Audi continues to redefine the driving experience. Whether through high-performance sports cars, cutting-edge electric vehicles, or autonomous driving advancements, the brand remains a leader in automotive excellence." />
+
+        <ImageView
+            android:id="@+id/imgChapter1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Chapter 4 Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ch4" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,54 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#FFFF"
+                style="@style/CustomButton"
+                android:text="Next" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chapter 1: The Origins of Audi"
+            android:textColor="#FFFF"
+            android:textSize="18sp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="#FFFF"
+            android:text="The history of Audi dates back to the early 20th century when August Horch, a visionary German engineer, founded the company. In 1899, Horch established Horch Cie, producing some of Germany’s first automobiles. However, after internal conflicts, he left his own company in 1909 and was legally barred from using the Horch name for his new venture. Instead, he chose the Latin translation of his surname—Audi, which means listen in German.
+
+In 1932, Audi joined forces with DKW, Wanderer, and Horch, forming Auto Union. This merger introduced the four interlocking rings as the company's emblem, symbolizing the unity of these brands. During this period, Audi became known for producing technologically advanced vehicles, including the Auto Union Type C race car, which dominated Grand Prix racing in the 1930s.
+
+World War II severely impacted Audi's production, and the company struggled to rebuild in the post-war era. It wasn't until the 1960s that Audi, now under Volkswagen Group ownership, re-emerged as a leading automotive brand. The introduction of the Audi F103 series marked the beginning of a new era for the company, setting the stage for the luxury and performance vehicles that define Audi today." />
+
+        <ImageView
+            android:id="@+id/imgChapter1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Chapter 1 Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ch1" />
+
+    </LinearLayout>
+</ScrollView>
